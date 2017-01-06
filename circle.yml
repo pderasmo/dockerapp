@@ -12,6 +12,7 @@ test:
   override:
     - docker-compose up -d
     - docker-compose run dockerapp python test.py
+
 deployment:
   hub:
     branch: [circle_ci_publish, master]
